@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    /* Encase the CSS rules for larger views */
+  
+    nav ul {
+      flex-direction: row;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
