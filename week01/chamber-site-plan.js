@@ -12,3 +12,4 @@ document.addEventListener('DOMContentLoaded', function() {
     var lastModifiedDate = document.lastModified;
     lastModifiedElem.textContent = 'Last Modified: ' + lastModifiedDate;
   });
+  

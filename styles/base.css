@@ -153,7 +153,30 @@ footer a:hover {
     display: none;
 }
 
+/* Additional styles for dark mode */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, nav ul {
+  color: #ccc;
+}
+
+body.dark-mode a {
+  color: #007bff;
+}
 
 
+nav.mobile-menu ul {
+  background-color: #222;
+  padding: 1rem;
+}
 
- 
+nav.mobile-menu ul li {
+  margin-bottom: 0.5rem;
+}
+
+nav.mobile-menu.open ul {
+  display: block;
+}

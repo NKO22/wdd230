@@ -7,20 +7,34 @@
   <meta name="description" content="WDD 230 - Web Frontend Development. [Your Full Name]. Course assignment portal. Learn web frontend development with HTML, CSS, and JavaScript.">
   <meta name="author" content="[Orphee-Sacree Kalala Ngeleka]">
 
+  <!-- Custom CSS normalization -->
+  <link rel="stylesheet" href="styles/custom-normalization.css">
+
   <!-- Link to CSS files -->
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/hamburger.css">
+  <link rel="stylesheet" href="styles/dark-mode.css">
 </head>
 <body>
   <header>
     <img src="images/profile.jpg" alt="Profile Image">
-    <link rel="stylesheet" href="styles/base.css">
-<link rel="stylesheet" href="styles/larger.css">
     <h1>Orphee</h1>
+    <button id="darkModeToggle">Dark Mode</button>
+    <button id="hamburgerMenuToggle">☰</button>
+    <div id="hamburger" class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div id="mode" class="mode-toggle">
+      ☑️
+    </div>
   </header>
 
   <nav>
-    <ul>
+    <ul class="menu">
       <li><a href="#">Home</a></li>
       <li><a href="#">Chamber</a></li>
       <li><a href="#">Site Plan</a></li>
@@ -51,5 +65,7 @@
 
   <!-- JavaScript code to populate the year and last modified date -->
   <script src="scripts/getDates.js"></script>
+  <!-- JavaScript code for responsive hamburger menu and dark mode toggle -->
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

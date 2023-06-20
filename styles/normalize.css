@@ -1,0 +1,58 @@
+/* Custom CSS Normalization */
+
+/* Reset box-sizing */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Remove margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend,
+button,
+input,
+textarea,
+optgroup,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default button styles */
+button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove text decoration for links */
+a {
+  text-decoration: none;
+}
+
+/* Set default font family and font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
