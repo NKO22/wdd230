@@ -1,0 +1,2 @@
+git --version
+git config --global user.name "NKO22"
