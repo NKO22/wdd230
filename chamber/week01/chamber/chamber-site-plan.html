@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zongo Chamber of Commerce Site">
+    <meta name="author" content="Orphee-Sacree Ngeleka">
+    <meta property="og:title" content="Zongo Chamber of Commerce" >
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvisitmccall.org%2Fmccall-chamber%2F&psig=AOvVaw2FFYmx2hc2dAE639yQbZre&ust=1673843878567000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMjkjMDgyPwCFQAAAAAdAAAAABAE" >
+    <meta property="og:url" content="https://nko22.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">/''
+    <link rel="stylesheet" href="styles/chamber-site-plan.css">
+    <title>Kinshasa Chamber of Commerce</title>
+</head>
+<body>
+    <nav>Navigation</nav>
+    <header>Commerce Site-Plan | Zongo, Kinshasa
+        <br>
+        Site-Name: City of Zongo Chamber of Commerce
+    </header>
+    <section class="purpose">
+        <h1>Site Purpose</h1>
+        <p>"The Zongo Chamber of Commerce acts as a regional economic catalyst, leadership convener and community champion. We promote business through member services, economic and community development, and public policy that balances economic prosperity" - Zongo Chamber of Commerce description   </p>
+    </section>
+    <section class="scenerios">
+        <h1>Scenerios</h1>
+        <ul> 
+            <li> What events will the chamber be holding this month that promote business-to-business networking?</li>
+            <li> Where can I find contact information for the chamber's board of directors?</li>
+            <li> What has been the population growth in the area?</li>
+           
+        </ul>
+    </section>
+    <section class="colorschema">
+        <h1>Color Schema</h1>
+        <div style="background-color:steelblue">
+            Navigation/Footer: Steel Blue
+        </div>
+        <div style="background-color:dimgrey;">
+            Header Color: Dim Grey
+        </div>
+        <div style="background-color: floralwhite;">
+            Background Color: Floral White
+        </div>
+        <div style="background-color:gold">
+            Button/Accent Color: Gold
+        </div>
+    </section>
+    <section class="typography">
+        <h1>Typography</h1>
+        <h3>Navigation Font: Dosis</h3>
+        <h3>Title Font: Reenie Beanie</h3>
+        <h3>Paragraph Font: Lora</h3>
+    </section>
+    <section class="wireframe">
+        <h1>Wireframes</h1>
+        <h3>Mobile View Wireframe:</h3>
+        <img src="images\mobile_wireframe.png" alt="Mobile Wireframe">
+        <h3>Larger (Desktop) View Wireframe:</h3>
+        <img src="images\desktop_wireframe.png" alt="Desktop Wireframe">
+
+    </section>
+    <main class="gridcontainer">
+        <h2>Adventure Awaits!</h2>
+        <p>Zongo Falls is a breathtaking natural wonder located just outside Kinshasa, the capital city of the Democratic Republic of Congo. Despite the need for a somewhat costly 4WD hire (US$200) to reach this destination, it remains a popular day trip for locals and tourists alike.
+
+            Standing at an impressive height of 65 meters, Zongo Falls is renowned as one of the most spectacular sights in the country. To reach the viewpoints overlooking the falls, visitors should be prepared for a bit of hiking and should wear appropriate shoes that can handle muddy terrain. However, the effort is well worth it, as witnessing the water cascade over the precipice and into the river below is an unforgettable experience.
+            
+            For those who wish to extend their visit, the Seli Safari Resort is available at the falls. This resort offers the opportunity to enjoy a delicious lunch or even stay overnight, allowing visitors to immerse themselves fully in the beauty of the surroundings.
+            
+            Located approximately 130 kilometers away from Kinshasa, reaching Zongo Falls requires a four-hour journey each way. Despite the distance, the awe-inspiring sight of the falls and the chance to connect with nature make it a must-see destination for anyone visiting Kinshasa and seeking a memorable adventure.
+        </p>
+        <img class="img1" src="images/welcome.jpg" loading="lazy" alt="dining">
+        <p class="eat">Welcome</p>
+        <img class="img2" src="images/fun.jpg" loading="lazy" alt="shopping">
+        <p class="shop">Fun</p>
+        <img class="img3" src="images/bungalow.jpg" loading="lazy" alt="lodging">
+        <p class="stay">Stay</p>
+        <div id="spotLighted">
+            <h2>Business Spotlights</h2>
+            <ul>     
+            </ul>
+        </div>
+        <div class="background">
+            <h4>Current Events </h4>
+            <a href="currentsevents.html" class="events-button">Find Your Fun</a>
+        </div>
+        <div class="weather">
+            <p>The current temperature in Zongo Kinshasa is <span id="current-temp"></span></p>
+            <figure>
+              <img id="weather-icon" src="https://api.openweathermap.org/data/2.5/weather" alt="icon">
+              <figcaption></figcaption>
+            </figure>
+            <div id="foreCast"></div>
+        </div>
+
+        <div id="weather-forecast"></div>
+
+    </main>
+    <footer>
+        
+        <div style="background-color: steelblue;">
+            <p>&copy; <span id="year"></span> - Orphee-Sacree - Kinshasa, DR Congo</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
