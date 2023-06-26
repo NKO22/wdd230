@@ -1,10 +1,7 @@
-const yearSpan = document.getElementById("year");
-const lastModifiedParagraph = document.getElementById("lastModified");
+let newDate = new Date();
 
-// Populate the year
-const currentYear = new Date().getFullYear();
-yearSpan.textContent = currentYear;
+document.getElementById("currentYear").textContent = newDate.getFullYear();
 
-// Populate the last modified date
-const lastModifiedDate = new Date(document.lastModified);
-lastModifiedParagraph.textContent = "Last modified: " + lastModifiedDate.toDateString();
+let lastUpdated = document.lastModified;
+
+document.getElementById("updatedDate").textContent = lastUpdated;

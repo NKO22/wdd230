@@ -1,182 +1,197 @@
-/* Define my color schema and typography choices */
+/*Small view*/
+@media only screen and (max-width: 714px){
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-  }
+
+  /***************************************
+  ************ Header section ************
+  ****************************************/
   
-  h1, h2, h3 {
-    color: #555;
+  .headerLogo img {
+      max-width: 110px;
+      max-height: 110px;
   }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
+
+  .headerLogo h1 {
+      font-size: 20px;
   }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #007bff;
-    padding: 1rem;
-    color: #fff;
+
+  .mainNav {
+      top: 200px;
   }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-    margin: 1 auto
-  }
-  
-  nav ul li {
-    margin: 1 auto;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
+
+  /***************************************
+  ***************** Main *****************
+  ****************************************/
+
   main {
-    max-width: 960px;
-    margin: 1 auto;
-    padding: 2rem;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+      padding: 5px;
+      margin: 10px;
+      display: flex;
+      flex-flow: column;
+  }
+
+  main section {
+      height: auto;
   }
   
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+  main h2{
+      color: #22a9c4;
+      font-size: 20px;
+  }
+
+  .welcome h2 {
+      left: 20%;
+      right: 20%;
+      font-size: 20px;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+  .welcome button {
+      left: 20%;
+      right: 20%;
+      transition: .8s;
+      font-size: 1em;
+  }
+
+  .spotlight {
+      flex-direction: column;
+  }
+
+  .spotlight div {
+      border: solid 1px gray;
   }
   
-  footer {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    text-align: center;
-    color: #777;
+  main .join{
+      display: none;
+  }
+
+  /***************************************
+  **************** Footer ****************
+  ****************************************/
+
+  footer{
+      display: flex;
+      text-align: center;
+      background-color: #22a9c4;
+      flex-flow: column;
+  }
+
+  .logo {
+      max-width: 120px;
+      max-height: 120px;
+      margin: 0px;
+  }
+
+  footer h3 {
+      font-size: 16px;
   }
   
- 
- 
-html {
-    background-color: lightblue;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    height: 100%;
-}
-body {
-    border-radius: 5px;
-    min-height: 406px;
-    height: 70%;
-    width: 70%;
-    max-width: 700px;
-    background-color: white;
-}
-header {
-    padding: 1em;
-    display: grid;
-    position: relative;
-    background-color: seagreen;
-    grid-template-columns: auto 20%;
-    grid-template-rows: 5em;
-    justify-items: center;
-    border-radius: 5px;
-    z-index: 15;
-}
-h1 {
-    font-size: 40px;
-    color: white;
-    align-self: center;
+  footer section p {
+      font-size: 12px;
+  }
+
+  .soc_media img {
+      max-width: 50px;
+      max-height: 50px;
+      align-items: center;
+  }
+
+  .info_bottom {
+      border-top: 1px solid white;
+      margin-top: 0;
+      font-size: 12px;
+  }
+
+  /***************************************
+  ************** Discover ****************
+  ****************************************/
+
+  .discover {
+      margin: 15px;
+  }
+
+  .info-box {
+      margin: 50px;
+  }
   
-}
-header > img {
-    width: 20%;
-    box-shadow: 1px 1px 10px black;
-    border-radius: 5px;
-}
-main {
-    width: 97%;
-    height: calc(100% - 5em - 6em - 4em + 5px);
-    margin: 2em 0 2em auto;
-    position: relative;
-}
-h2 {
-    border-bottom: solid 1px #cccccc;
-    margin-bottom: 0;
-    width: 95%;
-}
-ul {
-    margin: 0;
-    padding-top: 10px;
-    width: calc(100% - 40px);
-    height: 94%;
-    overflow-y: auto;
-}
-ul li {
-    padding-bottom: 5px;
-}
-a {
-    color: seagreen;
-}
-a:active {
-    color: tomato;
-}
-footer {
-    background-color: seagreen;
-    position: relative;
-    color: white;
-    padding: 0.75em;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 10;
-}
-footer a {
-    color: white;
-    text-decoration: underline lightblue;
-    transition: color 0.5s, text-shadow 0.5s;
-}
-footer a:hover {
-    color: lightgreen;
-    text-shadow: 1px 1px 10px lightblue;
-}
-#updated {
-    color: lightblue;
-    font-size: 12px;
-}
-#not-reasonable-size {
-    display: none;
-}
-
-/* Additional styles for dark mode */
-body.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
-
-body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, nav ul {
-  color: #ccc;
-}
-
-body.dark-mode a {
-  color: #007bff;
-}
+  .imageFrame h2 {
+      font-size: 2em;
+  }
+  
+  .info-box h3 {
+      font-size: 1.8em;
+      padding: 5px;
+  }
+  
+  .imageFrame p {
+      font-size: 1em;
+      padding: 10px;
+  }
+  
 
 
-nav.mobile-menu ul {
-  background-color: #222;
-  padding: 1rem;
-}
+  /***************************************
+  *************** Directory **************
+  ****************************************/
 
-nav.mobile-menu ul li {
-  margin-bottom: 0.5rem;
-}
+  .boxInfo {
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+  }
 
-nav.mobile-menu.open ul {
-  display: block;
+  .boxInfo img{
+      display: block;
+      border-radius: 5px;
+      width: 70%;
+      height: 70%;
+  }
+
+  .boxInfo h2 {
+      font-size: 2.5em;
+      padding: 10px;
+      text-align: center;
+  }
+
+  .boxInfo p {
+      font-size: 1em;
+      padding: 0;
+  }
+
+  /***************************************
+  *************** Join Us ****************
+  ****************************************/
+  td, th {
+      display: block;
+  }
+  
+  th {
+      text-align: center;
+  }
+  
+  td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+  
+  td {
+      clear: both;
+      padding-left: 50%;
+  }
+    
+
+    
+
+
+
+
+
+  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+  html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+  /*----------- apply a natural box layout model to all elements --------------*/
+  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 }
