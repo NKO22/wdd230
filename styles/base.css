@@ -1,197 +1,240 @@
-/*Small view*/
-@media only screen and (max-width: 714px){
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/*css flex must be used on navigation*/
+
+nav {
+    display: flex;
+    flex: column;
+    gap: 8px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#eee;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.menu-item {
+    display: none;
+
+}
+a.open {
+    display: flex;
+}
+
+.close::before {
+    content: "❌";
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(78, 93, 78);
+    max-height: 280px;
+    color: white;
+    font-size: 2em;
+    padding-left: 30px;
+    box-shadow: 0px 0px 5px 0px #000000;
+}  
+
+header h1{
+  order: 1;
+  font-family: "Arizonia";
+  margin-right: 80px;
+  text-shadow: 2px 2px #000000;
+  font-size: 2em;
+
+}
+
+header img {
+   order: -1;
+   border-radius: 50%;
+   box-shadow: 0px 0px 10px 0px #000000;
+   width: 220px;
+   height: 220px;
+}
+
+main {
+    max-width: 670px;
+	margin: 0 auto;
+    text-align: center;
+    background-color:#eee;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 0px #000000;
+    padding-bottom: 10px;
+
+}
+.hero {
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+.hero img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.herolabel {
+	position: absolute;
+	background: radial-gradient(#fff, lightblue);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
+
+main h1 {
+    font-size: .7em;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 25px;
+    font-size: 1.5em;
+ }
+
+a {
+    color:#000;
+    
+}
+
+.card1 {
+    background-color:white;
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    border: 1.5px solid black;
+    box-shadow: 0px 0px 10px 0px #000000;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+.card2 {
+    background-color:white;
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1.5px solid black
+    
+}
+
+.card3 {
+    background-color:white;
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    border: 1.5px solid black
+    
+}
+
+main h3 {
+    background-color:white;
+    max-width: 300px;
+    margin-left: 40px;
+    
+}
 
 
-  /***************************************
-  ************ Header section ************
-  ****************************************/
-  
-  .headerLogo img {
-      max-width: 110px;
-      max-height: 110px;
-  }
-
-  .headerLogo h1 {
-      font-size: 20px;
-  }
-
-  .mainNav {
-      top: 200px;
-  }
-
-  /***************************************
-  ***************** Main *****************
-  ****************************************/
-
-  main {
-      padding: 5px;
-      margin: 10px;
-      display: flex;
-      flex-flow: column;
-  }
-
-  main section {
-      height: auto;
-  }
-  
-  main h2{
-      color: #22a9c4;
-      font-size: 20px;
-  }
-
-  .welcome h2 {
-      left: 20%;
-      right: 20%;
-      font-size: 20px;
-      text-align: center;
-      transition: 0.3s;
-  }
-
-  .welcome button {
-      left: 20%;
-      right: 20%;
-      transition: .8s;
-      font-size: 1em;
-  }
-
-  .spotlight {
-      flex-direction: column;
-  }
-
-  .spotlight div {
-      border: solid 1px gray;
-  }
-  
-  main .join{
-      display: none;
-  }
-
-  /***************************************
-  **************** Footer ****************
-  ****************************************/
-
-  footer{
-      display: flex;
-      text-align: center;
-      background-color: #22a9c4;
-      flex-flow: column;
-  }
-
-  .logo {
-      max-width: 120px;
-      max-height: 120px;
-      margin: 0px;
-  }
-
-  footer h3 {
-      font-size: 16px;
-  }
-  
-  footer section p {
-      font-size: 12px;
-  }
-
-  .soc_media img {
-      max-width: 50px;
-      max-height: 50px;
-      align-items: center;
-  }
-
-  .info_bottom {
-      border-top: 1px solid white;
-      margin-top: 0;
-      font-size: 12px;
-  }
-
-  /***************************************
-  ************** Discover ****************
-  ****************************************/
-
-  .discover {
-      margin: 15px;
-  }
-
-  .info-box {
-      margin: 50px;
-  }
-  
-  .imageFrame h2 {
-      font-size: 2em;
-  }
-  
-  .info-box h3 {
-      font-size: 1.8em;
-      padding: 5px;
-  }
-  
-  .imageFrame p {
-      font-size: 1em;
-      padding: 10px;
-  }
-  
-
-
-  /***************************************
-  *************** Directory **************
-  ****************************************/
-
-  .boxInfo {
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-  }
-
-  .boxInfo img{
-      display: block;
-      border-radius: 5px;
-      width: 70%;
-      height: 70%;
-  }
-
-  .boxInfo h2 {
-      font-size: 2.5em;
-      padding: 10px;
-      text-align: center;
-  }
-
-  .boxInfo p {
-      font-size: 1em;
-      padding: 0;
-  }
-
-  /***************************************
-  *************** Join Us ****************
-  ****************************************/
-  td, th {
-      display: block;
-  }
-  
-  th {
-      text-align: center;
-  }
-  
-  td:before {
-      content: attr(data-label);
-      float: left;
-      font-weight: bold;
-      text-transform: uppercase;
-  }
-  
-  td {
-      clear: both;
-      padding-left: 50%;
-  }
+.card3 p {
+    color:#000
+}
     
 
+footer {
+    background-color:beige;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 0px 2px 0px #000000;
     
+    
+}
+
+footer img {
+    width: 50px;
+    height: 30px;
+    padding-top: 9px;
+    
+}
+
+.map {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 
 
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-  html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
 
-  /*----------- apply a natural box layout model to all elements --------------*/
-  * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+    text-align: left;
+}
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding-bottom: 14px;
+}
+form input.submitBtn {
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    background-color:rgb(221, 139, 139)
+    
 }
