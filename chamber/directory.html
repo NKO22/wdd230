@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zongo Chamber of Commerce</title>
+    <meta name="description" content="Zongo Chamber of Commerce Project for WDD 230.
+             This page has the directory of all the members of the Chamber and shows their
+             business cards, information in list form and as images.">
+    <meta name="author" content="Orphee-Sacree Ngeleka">
+        
+     <!-- Social Media HTML -->
+     <meta property="og:title" content="Orphee-Sacree Ngeleka Portal for WDD230">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content=" ">
+     <meta property="og:images" content="images/selisafari4.webp">
+     
+     <!-- Favicon -->
+     <link rel="icon" href="images/communityIcon.jpeg">
+
+    <!-- Style sheet links -->
+     <link rel="stylesheet" href="styles/chamber-base.css">
+     <link rel="stylesheet" href="styles/chamber-large.css">
+     <link rel="stylesheet" href="styles/chamber-normalize.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="header">Zongo Chamber of Commerce</h1>
+            <button id="button"></button>
+                <nav> 
+                    <ul class="menu">
+                        <li title="home">
+                            <a href="chamber-index.html" id="menu-button"> Home </a>
+                        </li>
+                        <li title="discover">
+                            <a href="discover.html" class="menu-item"> Discover </a>
+                        </li>
+                        <li title="about">
+                            <a href="directory.html" class="menu-item"> Directory </a>
+                        </li>
+                        <li title="contact">
+                            <a href="join.html" class="menu-item"> Join </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p><img src="images/zongo-falls.webp" loading="lazy" width="600" height="400" alt="Quality Store"><br>
+                     <a href="join.html" class="join-button">Join the Chamber</a><br>
+                </p> 
+        </header> 
+        <div id="business">
+            <h1 id="title">Chamber Directory</h1>
+                <div id="directory">
+                    <button id="grid"> 🔠 Grid </button>
+                    <button id="list"> 📋 List </button>
+                </div>
+                <article class="grid">  
+                    <div id="cards"></div> 
+                </article>
+        </div>
+    </main>
+        <footer>
+            <p> &copy;
+                <script>document.write(new Date().getFullYear())</script>
+                Zongo Chamber Of Commerce<br>
+                Orphee-Sacree Ngeleka  WDD 230 Project 
+            </p>
+            <p class="highlight" id="lastModified">
+                <script>
+                const date = new Date(document.lastModified);
+                document.getElementById("lastModified").innerHTML = date; 
+                </script>
+            </p>
+        </footer> 
+             <!-- Javascript files -->
+     <script src="scripts/chamber-menu.js"></script> 
+     <script src="scripts/chamber-directory.js" ></script> 
+</body>
+</html>
