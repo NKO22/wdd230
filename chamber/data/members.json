@@ -1,0 +1,52 @@
+{"members" : [   
+        {   "name" : "In the world of Vodacom",
+            "address" : "082 Vodacom Boulevard, Midrand",
+            "phone" : "+27 11 653 5000",
+            "website" : "https://www.vodacom.com/",
+            "membershiplevel" : "Gold",
+            "image" : "images/vodacom.jpg"
+        },      
+        {   "name" : "Airtel",
+            "address" : "130 Immeuble, Kwango, Kinshasa",
+            "phone" : "+24399 600 0121",
+            "website" : "http://www.airtel.cd/",
+            "membershiplevel" : "Gold",
+            "image" : "images/airtel.webp"
+        },
+        {   "name" : "OFFICE DES ROUTES",
+            "address" :"482, Avenue de la Science, Gombe",
+            "phone" : "+243 856 280 662",
+            "website" : "http://www.officesroutes.cd/",
+            "membershiplevel" : "Gold",
+            "image" : "images/officedesroutes.jpg"
+        },
+        {   "name" : "KIN MARCHE",
+            "address" :"De La Presse, Kinshasa",
+            "phone" : "+243 89 144 1111",
+            "website" : "http://www.kinmarche.com/",
+            "membershiplevel" : "Bronze",
+            "image" : "images/kinmarche.jpg"
+        },
+        {   "name" : "Orange RDC",
+            "address" :"Wamba, Basoko",
+            "phone" : "+243 84 000 1777",
+            "website" : "http://www.orange.cd/",
+            "membershiplevel" : "Gold",
+            "image" : "images/orange.jpg"
+        },
+        {   "name" : "Bosolo na Politik",
+            "address" :"116 S Clark St",
+            "phone" : "208-534-1802",
+            "website" : "http://bosolonapolitik.com/",
+            "membershiplevel" : "Silver",
+            "image" : "images/bosolonapolitik.jpg"
+        },  
+        {   "name" : "Ministere des Finances",
+            "address" :"Blvd du 30 Juin, Batetela",
+            "phone" : "208-745-8108",
+            "website"  : "http://finances.gouv.cd/",
+            "membershiplevel" : "Gold",
+            "image" : "images/ministerefinaces.jpg"
+        }
+    ]
+}
