@@ -1,240 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+:root {
+  --primary-color: #E63946;
+  --secondary-color:#551A8B;
+  --accent1-color: #6EA0BF;
+  --accent2-color: #E6F2FF;
 
-/*css flex must be used on navigation*/
+  --heading-font: 'Merriweather', sans-serif;
+  --paragraph-font: 'Roboto', sans-serif;
 
-nav {
+  --nav-background-color: #6EA0BF;
+  --nav-link-color: #551A8B;
+  --nav-hover-link-color: #E63946;
+  --nav-hover-background-color:#E6F2FF;
+}
+
+body {
+    font-family: var(--paragraph-font);
+  }
+
+
+  header, main, footer {
+    
+    margin: 1rem auto;
+    border: 1px solid var(--accent2-color);
+    padding: 1rem;
+    background-color: #e6f2ff;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  
+  section {
+    padding: 1rem;
+    background-color: #fff;
+  }
+
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  header {
+    background-color: var(--accent2-color);
     display: flex;
-    flex: column;
-    gap: 8px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:#eee;
-}
-
-nav a {
-    font-size: 1.5em;
-    color: #000;
-}
-
-.menu-item {
-    display: none;
-
-}
-a.open {
-    display: flex;
-}
-
-.close::before {
-    content: "❌";
-}
-
-#mode {
-	position: absolute;
-	top: 1rem;
-	left: 2rem;
-	font-size: 2rem;
-	cursor: pointer;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color:rgb(78, 93, 78);
-    max-height: 280px;
-    color: white;
-    font-size: 2em;
-    padding-left: 30px;
-    box-shadow: 0px 0px 5px 0px #000000;
-}  
-
-header h1{
-  order: 1;
-  font-family: "Arizonia";
-  margin-right: 80px;
-  text-shadow: 2px 2px #000000;
-  font-size: 2em;
-
-}
-
-header img {
-   order: -1;
-   border-radius: 50%;
-   box-shadow: 0px 0px 10px 0px #000000;
-   width: 220px;
-   height: 220px;
-}
-
-main {
-    max-width: 670px;
-	margin: 0 auto;
-    text-align: center;
-    background-color:#eee;
     justify-content: center;
-    box-shadow: 0px 0px 5px 0px #000000;
-    padding-bottom: 10px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  header img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .giframe{
+    max-width: 767px;
+    margin: 0 auto;
+  }
 
-}
-.hero {
-	position: relative;
-	border: 1px solid rgba(0,0,0,.1);
-	height: 300px;
-}
-.hero img {
-	width: 100%;
-	height: 300px;
-	object-fit: cover;
-}
-.herolabel {
-	position: absolute;
-	background: radial-gradient(#fff, lightblue);
-	border: 1px solid rgba(0,0,0,.75);
-	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-	/* Buenas */
-}
+  header, main {
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 
-.herolabel p {
-	margin: 0;
-	padding: .25rem;
-	font-weight: 700;
-	font-size: 2rem;
-	font-family:"Great Vibes", serif;
-}
-
-main h1 {
-    font-size: .7em;
-    color: #000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-bottom: 25px;
-    font-size: 1.5em;
- }
-
-a {
-    color:#000;
+  .hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
+    height: 300px;
     
-}
+  }
 
-.card1 {
-    background-color:white;
-    border-radius: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    border: 1.5px solid black;
-    box-shadow: 0px 0px 10px 0px #000000;
-    margin-right: 15px;
-    margin-bottom: 15px;
+  .giframe-2{
+    width:100%;
+    height:450px;
+    border: 0;
+  }
 
-}
-
-.card2 {
-    background-color:white;
-    box-shadow: 0px 0px 10px 0px #000000;
-    border-radius: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border: 1.5px solid black
-    
-}
-
-.card3 {
-    background-color:white;
-    box-shadow: 0px 0px 10px 0px #000000;
-    border-radius: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    border: 1.5px solid black
-    
-}
-
-main h3 {
-    background-color:white;
-    max-width: 300px;
-    margin-left: 40px;
-    
-}
-
-
-.card3 p {
-    color:#000
-}
-    
-
-footer {
-    background-color:beige;
-    justify-content: center;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    box-shadow: 0px 0px 2px 0px #000000;
-    
-    
-}
-
-footer img {
-    width: 50px;
-    height: 30px;
-    padding-top: 9px;
-    
-}
-
-.map {
+  .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-}
-
-
-
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
-    padding: .5rem 2%;
-}
-
-form legend {
-    color: #445ba9;
-    margin: 0 1rem;
-    padding: 0 .5rem;
+  }
+  
+  .herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
     
-}
-form label.top, form div {
+  }
+  
+  .herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family:"Great Vibes", serif;
+  }
+ 
+  
+  footer{
+    max-width: 767px;
+    text-align: center;
+   
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  nav {
+    background-color: var(--nav-background-color);
+    margin: 0 auto;
+    
+    max-width: 767px;
+  }
+  nav ul {
+    list-style-type: none;
+  }
+
+  #activities-container {
+    list-style-type: none;
+  }
+
+  nav a {
     display: block;
-    padding-top: 1rem;
-    color: #9c2c13;
-    font-size: .8rem;
-    text-align: left;
-}
-form label.top input, form label.top select {
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    border: 1px solid #fff;
+  }
+  
+  .active {
+    color: yellow;
+  }
+  
+  section h3{
+    text-align: center;
+    
+    
+    
+  }
+  
+  #darkModeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+
+  /* Hamburger Menu */
+
+  #hamburgerButton{
+    font-size: 2rem;
+    color: var(--accent2-color);
+    background: var(--accent1-color);
     border-radius: 4px;
-    padding: .75;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    text-align: left;
-    padding-bottom: 14px;
-}
-form input.submitBtn {
-    border: none;
-    border-radius: 1rem;
-    padding: 1rem 1.5rem;
-    margin: 2rem 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
-    background-color:rgb(221, 139, 139)
-    
-}
+    margin: 5px;
+  
+  }
+  
+  #mainMenu {
+    display: none;
+  }
+
+  #mainMenu.show {
+    display: block;
+  }
+
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .dark-mode h1 {
+    color: #fff;
+  }
+  .dark-mode a {
+    color: #fff;
+  }
+
+
+  .dark-mode nav {
+    background-color: #333;
+  }
+
+  .dark-mode nav a {
+    color: #fff;
+  }
+
+  .dark-mode nav a:hover {
+    border: 1px solid #fff;
+  }
+
+  .dark-mode section {
+    background-color: #444;
+  }
+
+  .dark-mode footer {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .cent-wet{
+    text-align: center;
+  }

@@ -1,149 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD230 - Portal - Orphee-Sacree Ngeleka</title>
-        <meta name="description" content="WDD230 course assignment portal page that will be used
-            throughout for the assignments of Orhee-Sacree Ngeleka.">
-        <meta name="author" content="Orphee-Sacree Ngeleka">
-         
-        <!-- Social Media HTML -->
-        <meta property="og:title" content="Orphee-Sacree Ngeleka Portal for WDD230">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://nko22.github.io/wdd230/">
-        <meta property="og:image" content="images/usflag.jpeg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Orphee-Sacree Ngeleka - WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.krazybutterfly.com/wp-content/uploads/2023/03/Lagos-Nigeria.jpg">
+  <meta property="og:url" content="https://fex-zi.github.io/wdd230/">
+  <title>Form Page</title>
+  <meta name="description" content="Form page">
+  <meta name="author" content="Orphee-Sacree kalala Ngeleka">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link href="styles/base.css" rel="stylesheet">
+  <link href="styles/larger.css" rel="stylesheet">
+  <link href="styles/form.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/profile.webp" alt="Profile Image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <h1>Orphee-Sacree Kalala Ngeleka</h1>
+    <button id="hamburgerButton">&#8801;</button>
+  </header>
+  <nav id="mainMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chamber/chamber-index.html">Chamber</a></li>
+      <li><a href="chamber/chamber-site-plan.html">Site Plan</a></li>
+      <li><a href="form.html">Form</a></li>
+    </ul>
+</nav>
+  <main>
+     
     
-        <!-- Stylesheets for css files -->
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/index-base.css">
-        <link rel="stylesheet" href="styles/index-large.css">
-        
-        <!-- Favicon -->
-        <link rel="icon" href="images/PurpleSmile.jpg">
-    </head>
-    <body> 
-        <header>
-            <h1>Orphee-Sacree Ngeleka</h1> 
-            <button id="hamburger"></button>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="https://www.linkedin.com/in/orphee-sacree-ngeleka-8783ba1b0/" ><h3>Linkedin</h3></a></li>
-                        <li><a href="https://my.byui.edu/ICS/"><h3>BYU-Idaho</h3></a></li>
-                    </ul>
-                </nav> 
-            <img src="images/profile.webp" alt="Teresa's pix" loading="lazy" width="150" height="200">
-        </header>
-
-        <div class="hero">
-            <picture>
-                <source srcset="(max-width: 400px)" srcset="images/payson_utah_temple.webp" width="600">
-                <img src="images/payson_utah_temple.webp" loading="lazy" width="1000" alt="payson_utah_temple">
-            </picture>      
-                <div class="herolabel">
-                    <p>Payson Temple</p>
-                </div>            
-        </div>
-
-        <main><h1>WDD 230: Course Activity Portal</h1>
-            <div id="mode">
-                ☑️
-            </div>
+    <h2 class="card3">Form | WDD 230: Web Frontend Development</h2>
+        <form method="get" action="record.html" name="form" id="form">
+          <div>
+            <label for="username" class="top">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div>
+            <label for="password" class="top">Password:</label>
+            <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and can only be alphanumeric">
+          </div>
+          <div>
+            <label for="confirm_password" class="top">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required pattern="[A-Za-z0-9]{8,}">
+          </div>
+          <div>
+            <label for="email" class="top">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="@byui.edu">
+          </div>
+          <div>
+            <label for="r" class="top">Page Rating:</label>
             
-            
-        </main>
-
-<!-- Map -->
-        
-
-<!-- Contact Us Form -->
-<div id="bottom"> 
-    <section id="contact">
-        <h2>Contact Us Form</h2>
-            <form method="get" oninput="result.value=parseInt(a.value)">
-                <div id="formmessage"></div>
-                    <label>Star Rating:</label> 
-                        <div class="stars">
-                            <input type="radio" id="fivestar" name="stars" value="5" required>
-                                <label for="fivestar"></label>   
-                            <input type="radio" id="fourstar" name="stars" value="4" required>
-                                <label for="fourstar"></label>      
-                            <input type="radio" id="threestar" name="stars" value="3" required>
-                                <label for="threestar"></label>   
-                            <input type="radio" id="twostar" name="stars" value="2" required>
-                                <label for="twostar"></label>  
-                            <input type="radio" id="onestar" name="stars" value="1" required>
-                                <label for="onestar"></label>    
-                        </div>
-
-                    <label for="fullname">Name:</label>
-                        <input type="text" id="fullname" name="fullname" required placeholder="Your full name">
-                    <label for="email">Email address:</label>
-                        <input type="email" id="email" name="email" required>
-                    <label for="phone">Phone number:</label>
-                        <input type="tel" id="phone" name="phone" required oninvalid="this.setCustomValidity('Please enter a valid phone number!')" oninput="this.setCustomValidity('')">
-                    <label for="keyphrase">User Name:</label>
-                        <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required> 
-                    <label for="keyphrase2">Re-enter User Name:</label>
-                        <input type="text" id="keyphrase2" name="keyphrase2">
-                    <label for="comments">Message:</label>
-                        <textarea id="comments" name="comments" required></textarea>
-                <button class="msgbtn" id="btnSubmit" type="submit">Send Message</button>
-                    <input type="hidden" value="43aster"> 
-            </form>
-    </section>
-            <section id="response"> 
-                <h2>Form Response</h2>         
-                <table>
-                    <caption> HTML Table Output</caption>
-                    <thead>
-                        <tr>
-                            <th colspan="2" scope="colgroup">Contact Form Result</th>
-                        </tr>
-                        <tr>
-                            <th scope="col">Field </th>
-                            <th scope="col">Entry</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Rating: </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Name:  </td>
-                            <td><output name="result" for="fullname"></output></td> 
-                        </tr>
-                        <tr>
-                            <td>Email:  </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Phone: </td>
-                            <td> </td> 
-                        </tr>
-                        <tr>
-                            <td>Username:  </td>
-                            <td></td> 
-                        </tr>
-                        <tr>
-                            <td>Message:  </td>
-                            <td></td> 
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </div>    
-        <footer >
-            &copy; <a class="highlight" id="newDate"></a> Orphee-Sacree Ngeleka <br>
-            <a class="highlight" id="lastModified"> </a>
-        </footer> 
-<!-- Java Script links -->
-            <script src="scripts/menu.js"></script>
-            <script src="scripts/darkmode.js"></script>
-            <script src="scripts/getDates.js"></script>
-            <script src="scripts/visits.js"></script>
-            <script src="scripts/form.js"></script>
-            <script src="week05/scripts/weather.js"></script>
-    </body>
-</html>    
+         <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+          </div>
+          <div>
+            <input type="submit" name="submit" id="submit">
+          </div>
+        </form>
+      
+  </main>
+  <footer>
+    <p>&copy;<span id="year"></span> Orphee-Sacree Kalala, Utah</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
