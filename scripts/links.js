@@ -1,6 +1,6 @@
-const baseURL = "https://fex-zi.github.io/wdd230/";
+const baseURL = "https://nko22.github.io/wdd230/";
 
-const linksURL = "https://fex-zi.github.io/wdd230/data/links.json";
+const linksURL = "https://nko22.github.io/wdd230/data/links.json";
 
 
 
