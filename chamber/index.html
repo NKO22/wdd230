@@ -1,115 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zongo Chamber of Commerce Site">
-    <meta name="author" content="Orphee-Sacree Ngeleka">
-    <meta property="og:title" content="Zongo Chamber of Commerce" >
-    <meta property="og:type" content="website" >
-    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvisitmccall.org%2Fmccall-chamber%2F&psig=AOvVaw2FFYmx2hc2dAE639yQbZre&ust=1673843878567000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMjkjMDgyPwCFQAAAAAdAAAAABAE" >
-    <meta property="og:url" content="https://nko22.github.io/wdd230/">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">/''
-    <link rel="stylesheet" href="styles/chamber-site-plan.css">
-    <title>Kinshasa Chamber of Commerce</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Zongo Chambers of commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.krazybutterfly.com/wp-content/uploads/2023/03/Lagos-Nigeria.jpg">
+  <meta property="og:url" content="https://nko22.github.io/wdd230/">
+  <title>Zongo Chamber of commerce</title>
+  <meta name="description" content="Homepage for Zongo Chambers of commerce">
+  <meta name="author" content="Orphee-Sacree Kalala Ngeleka">
+  <link rel="icon" href="images/favicon.webp">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link href="styles/base.css" rel="stylesheet">
+  <link href="styles/larger.css" rel="stylesheet">
+  <link href="styles/json.css" rel="stylesheet">
+  
 </head>
 <body>
-    <nav>Navigation</nav>
-    <header>Commerce Site-Plan | Zongo, Kinshasa
-        <br>
-        Site-Name: City of Zongo Chamber of Commerce
-    </header>
-    <section class="purpose">
-        <h1>Site Purpose</h1>
-        <p>"The Zongo Chamber of Commerce acts as a regional economic catalyst, leadership convener and community champion. We promote business through member services, economic and community development, and public policy that balances economic prosperity" - Zongo Chamber of Commerce description   </p>
+    
+  <header>
+    
+    <button id="hamburgerButton">&#8801;</button>
+    <img src="images/favicon.webp" alt="logo">
+      <h1 class="h1-name">Zongo Chamber of commerce</h1>
+  </header>
+  <nav id="mainMenu">
+    
+    <ul>
+      <li><img src="images/favicon.webp" alt="logo"> <span class="navWords"> Zongo <br>Chamber of commerce</span></li>
+      
+      <li class="reset"><a href="index.html" class="active">Home</a></li>
+      <li class="reset"><a href="discover.html">Discover</a></li>
+      <li class="reset"><a href="directory.html">Directory</a></li>
+      <li class="reset"><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+  <div class="header-content">
+    <img src="images/profile.jpg" alt="Profile Image">
+    <div class="cta-btn"><a href="join.html">Join Us Today</a></div>
+    </div>
+    <main class="main-1">
+      
+      <section class="card">
+        <h3>Events</h3><hr><br>
+        <p>Mark your calendars and be part of an enriching experience at the Kinshasa Chamber of Commerce's Annual Business Networking Conference! Join us on July 19, 2023, starting at 11 a.m., for a full day of networking, information-packed sessions, and valuable connections. This highly anticipated event unites local businesses, entrepreneurs, and professionals from around the world, offering you a unique opportunity to expand your network and explore new horizons. We look forward to welcoming you to this exceptional occasion that promises to empower and elevate your business endeavors.</p>
+      </section>
+      <section class="card2">
+        <h3>Zongo, Kinshasa Daily Weather Information</h3><hr><br>
+        <ul>
+          <li><div id="weather-day"></div><br><span id="current-temp" ></span>
+            <figure class="cent-wet">
+          <img id="weather-icon" src="jj" alt="weather">
+          <figcaption></figcaption></figure><hr class="hr-spot">
+        </li>
+        <li><div id="weather-day-2"></div><br><span id="current-temp-2" ></span>
+          <figure class="cent-wet">
+          <img id="weather-icon-2" src="jj" alt="weather">
+          <figcaption id="caption-2"></figcaption>
+        </figure><hr class="hr-spot"></li>
+        <li><div id="weather-day-3"></div><br><span id="current-temp-3" ></span>
+          <figure class="cent-wet">
+          <img id="weather-icon-3" src="jj" alt="weather">
+          <figcaption id="caption-3"></figcaption></figure>
+        </li>
+      </ul>
+      </section>
+      
+      <section class="bus-spot1">
+        <h2>Business Spotlights</h2>
+        <img src="images/selisafari2.webp" loading="lazy" width="200" height="150" alt="Broulim's"><br>
+        <p>Food Drive at Zongo this weekend.</p>
     </section>
-    <section class="scenerios">
-        <h1>Scenerios</h1>
-        <ul> 
-            <li> What events will the chamber be holding this month that promote business-to-business networking?</li>
-            <li> Where can I find contact information for the chamber's board of directors?</li>
-            <li> What has been the population growth in the since 2000?</li>
-           
-        </ul>
-    </section>
-    <section class="colorschema">
-        <h1>Color Schema</h1>
-        <div style="background-color:steelblue">
-            Navigation/Footer: Steel Blue
-        </div>
-        <div style="background-color:dimgrey;">
-            Header Color: Dim Grey
-        </div>
-        <div style="background-color: floralwhite;">
-            Background Color: Floral White
-        </div>
-        <div style="background-color:gold">
-            Button/Accent Color: Gold
-        </div>
-    </section>
-    <section class="typography">
-        <h1>Typography</h1>
-        <h3>Navigation Font: Dosis</h3>
-        <h3>Title Font: Reenie Beanie</h3>
-        <h3>Paragraph Font: Lora</h3>
-    </section>
-    <section class="wireframe">
-        <h1>Wireframes</h1>
-        <h3>Mobile View Wireframe:</h3>
-        <img src="images\mobile_wireframe.png" alt="Mobile Wireframe">
-        <h3>Larger (Desktop) View Wireframe:</h3>
-        <img src="images\desktop_wireframe.png" alt="Desktop Wireframe">
 
+    <section class="bus-spot2">
+        <h2>Business Spotlights</h2>
+        <img src="images/selisafari1.webp" loading="lazy" width="200" height="150" alt="Family Dollar"><br>
+        <p>Welcome to the new Swli Safari store in Zongo!!</p>
     </section>
-    <main class="gridcontainer">
-        <h2>Adventure Awaits!</h2>
-        <p>Zongo Falls is a breathtaking natural wonder located just outside Kinshasa, the capital city of the Democratic Republic of Congo. Despite the need for a somewhat costly 4WD hire (US$200) to reach this destination, it remains a popular day trip for locals and tourists alike.
 
-            Standing at an impressive height of 65 meters, Zongo Falls is renowned as one of the most spectacular sights in the country. To reach the viewpoints overlooking the falls, visitors should be prepared for a bit of hiking and should wear appropriate shoes that can handle muddy terrain. However, the effort is well worth it, as witnessing the water cascade over the precipice and into the river below is an unforgettable experience.
-            
-            For those who wish to extend their visit, the Seli Safari Resort is available at the falls. This resort offers the opportunity to enjoy a delicious lunch or even stay overnight, allowing visitors to immerse themselves fully in the beauty of the surroundings.
-            
-            Located approximately 130 kilometers away from Kinshasa, reaching Zongo Falls requires a four-hour journey each way. Despite the distance, the awe-inspiring sight of the falls and the chance to connect with nature make it a must-see destination for anyone visiting Kinshasa and seeking a memorable adventure.
-        </p>
-        <img class="img1" src="images/welcome.jpg" loading="lazy" alt="dining">
-        <p class="eat">Welcome</p>
-        <img class="img2" src="images/fun.jpg" loading="lazy" alt="shopping">
-        <p class="shop">Fun</p>
-        <img class="img3" src="images/bungalow.jpg" loading="lazy" alt="lodging">
-        <p class="stay">Stay</p>
-        <div id="spotLighted">
-            <h2>Business Spotlights</h2>
-            <ul>     
-            </ul>
-        </div>
-        <div class="background">
-            <h4>Current Events </h4>
-            <a href="currentsevents.html" class="events-button">Find Your Fun</a>
-        </div>
-        <div class="weather">
-            <p>The current temperature in Zongo Kinshasa is <span id="current-temp"></span></p>
-            <figure>
-              <img id="weather-icon" src="https://api.openweathermap.org/data/2.5/weather" alt="icon">
-              <figcaption></figcaption>
-            </figure>
-            <div id="foreCast"></div>
-        </div>
-
-        <div id="weather-forecast"></div>
-
+    <section class="bus-spot3">
+        <h2>Business Spotlights</h2>
+        <img src="images/selisafari.webp" loading="lazy" width="200" height="150" alt="Family Dollar"><br>
+        <p>Seli Safari is celebrating 10 years in business!</p>
+    </section>
     </main>
+    <hr class="hr-spot">
+    <div class="spot">Member Spotlights</div>
+    
+   
+      <div id="membersContainer" class="grid-view-2"></div>
+  
+      
+
+      
+      <section class="header" id="header">
+        <h2>Kinshasa Chamber of Commerce</h2>
+        <p>You are cordially invited to join us for a Commerce Meet and Greet on Thursday at 5:00 p.m. It will be a wonderful opportunity to mingle, connect, and foster new business relationships. We eagerly await your presence at this event and look forward to making it a memorable occasion for everyone involved. See you there!</p>
+        <a class="btn-bgstroke" id="btn-bgstroke">Close Banner ❌</a>
+    </section>
     <footer>
-        
-        <div style="background-color: steelblue;">
-            <p>&copy; <span id="year"></span> - Orphee-Sacree - Kinshasa, DR Congo</p>
-            <p id="lastModified"></p>
-        </div>
+      <p>&copy;<span id="year"></span> Orphee-Sacree Ngeleka, Utah</p>
+      <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getDates.js"></script>
     <script src="scripts/weather.js"></script>
-</body>
-</html>
+    <script src="scripts/json.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
+    
+    
+   
+    
+    
+  </body>
+  </html>
